@@ -1,30 +1,33 @@
 <div class="toolbar" role="banner">
-    <img
-      width="40"
-      alt="Angular Logo"
-      src="assets\img\pie-chart.png"
-    />
-    <span>Flower</span>
+  <span> Fl </span>
+  <img
+    width="40"
+    alt="Angular Logo"
+    src="assets\img\pie_chart.png"
+  />
+  <span> wer</span>
 
       <div class="spacer"></div>
-      <p-dropdown placeholder="Select" class = p-inputtext-sm [options]="cities1" [(ngModel)]="selectedCity1"  ></p-dropdown>
-      <li class="dropdown" appDropdown>
+      <p-dropdown placeholder="menu" class = p-inputtext-sm [options]="cities1" [(ngModel)]="selectedCity1"  ></p-dropdown>
+      <!-- <li class="dropdown" appDropdown>
         <a  style="cursor: pointer;" class="dropdown-toggle" role="button">manage<span class="caret"></span></a>
         <ul class="dropdown-menu">
             <li><a  style="cursor: pointer;">save date</a></li>
             <li><a  style="cursor: pointer;">fetch date</a></li>
         </ul>
-    </li>
+    </li> -->
   </div>
   
   <div class="content" role="main">
   
     <!-- Highlight Card -->
-    
+    <div *ngFor= "let account of accountData">
+      <p> {{ account }}</p>
+      </div>
     <img
     width="40"
     alt="Angular Logo"
-    src="assets\img\pie-chart.png"
+    src="assets\img\pie_chart.png"
     />
     <div class="card highlight-card card-small">
         <p>{{ title }} app is running!</p>

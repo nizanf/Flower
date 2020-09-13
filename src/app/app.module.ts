@@ -9,6 +9,7 @@ import { ToolbarComponent } from './ui/toolbar/toolbar.component';
 import { CheckboxModule } from 'primeng/checkbox';
 import {DropdownModule} from 'primeng/dropdown';
 import { PageNotFoundComponent } from './ui/page-not-found/page-not-found.component';
+import { HttpClientModule } from '@angular/common/http';
 @NgModule({
   declarations: [
     AppComponent,
@@ -23,6 +24,7 @@ import { PageNotFoundComponent } from './ui/page-not-found/page-not-found.compon
     BrowserAnimationsModule,
     CheckboxModule,
     DropdownModule,
+    HttpClientModule
 
   ],
   providers: [],
